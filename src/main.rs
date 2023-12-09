@@ -7,10 +7,11 @@
 // pub mod day5;
 // pub mod day6;
 // pub mod day7;
-pub mod day8;
+// pub mod day8;
+pub mod day9;
 fn main() {
     // env::set_var("RUST_BACKTRACE", "1");
-    run(8);
+    run(9);
 }
 
 fn run(num: i32){
@@ -22,7 +23,8 @@ fn run(num: i32){
         // 5 => day5::day5(),
         // 6 => day6::day6(),
         // 7 => day7::day7(),
-        8 => day8::day8(),
+        // 8 => day8::day8(),
+        9 => day9::day9(),
         _ => println!("Error: Day not found!"),
     }
 }
