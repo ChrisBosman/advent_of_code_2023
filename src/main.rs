@@ -1,4 +1,4 @@
-// use std::env;
+use std::env;
 
 // pub mod day1;
 // pub mod day2;
@@ -9,9 +9,12 @@
 // pub mod day7;
 // pub mod day8;
 pub mod day9;
+pub mod day10;
+pub mod day12;
+pub mod day15;
 fn main() {
-    // env::set_var("RUST_BACKTRACE", "1");
-    run(9);
+    env::set_var("RUST_BACKTRACE", "1");
+    run(15);
 }
 
 fn run(num: i32){
@@ -25,6 +28,9 @@ fn run(num: i32){
         // 7 => day7::day7(),
         // 8 => day8::day8(),
         9 => day9::day9(),
+        10 => day10::day10(),
+        12 => day12::day12(),
+        15 => day15::day15(),
         _ => println!("Error: Day not found!"),
     }
 }
