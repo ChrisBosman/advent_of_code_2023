@@ -12,9 +12,10 @@ pub mod day9;
 pub mod day10;
 pub mod day12;
 pub mod day15;
+pub mod day16;
 fn main() {
     env::set_var("RUST_BACKTRACE", "1");
-    run(15);
+    run(16);
 }
 
 fn run(num: i32){
@@ -31,6 +32,7 @@ fn run(num: i32){
         10 => day10::day10(),
         12 => day12::day12(),
         15 => day15::day15(),
+        16 => day16::day16(),
         _ => println!("Error: Day not found!"),
     }
 }

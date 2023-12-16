@@ -14,7 +14,7 @@ fn calc_options(simp_data: Vec<Vec<&[char]>>, simp_length: Vec<VecDeque<usize>>)
     for (i,row) in simp_data.iter().enumerate(){
         let mut sum_at_start = sum;
         if row.is_empty() {sum += 1; println!("[{i}] Sum middle: {}",sum-sum_at_start); continue;}  // There is only one option possible
-        let spaces = row.iter().fold(0, |acc,v| acc+v.len());
+        // let spaces = row.iter().fold(0, |acc,v| acc+v.len());
         // Try out every solution
         let mut nr_s: Vec<usize> = vec![0;simp_length[i].len()];  // The offset between each part (to tryout more solutions)
         'SolutionsLoop: loop{
