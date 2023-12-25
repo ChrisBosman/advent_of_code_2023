@@ -1,4 +1,4 @@
-use std::env;
+// use std::env;
 
 // pub mod day1;
 // pub mod day2;
@@ -8,14 +8,18 @@ use std::env;
 // pub mod day6;
 // pub mod day7;
 // pub mod day8;
-pub mod day9;
-pub mod day10;
-pub mod day12;
-pub mod day15;
-pub mod day16;
+// pub mod day9;
+// pub mod day10;
+// pub mod day12;
+// pub mod day15;
+// pub mod day16;
+// pub mod day18;
+// pub mod day19;
+// pub mod day23;
+pub mod day24;
 fn main() {
-    env::set_var("RUST_BACKTRACE", "1");
-    run(16);
+    // env::set_var("RUST_BACKTRACE", "1");
+    run(24);
 }
 
 fn run(num: i32){
@@ -28,11 +32,15 @@ fn run(num: i32){
         // 6 => day6::day6(),
         // 7 => day7::day7(),
         // 8 => day8::day8(),
-        9 => day9::day9(),
-        10 => day10::day10(),
-        12 => day12::day12(),
-        15 => day15::day15(),
-        16 => day16::day16(),
+        // 9 => day9::day9(),
+        // 10 => day10::day10(),
+        // 12 => day12::day12(),
+        // 15 => day15::day15(),
+        // 16 => day16::day16(),
+        // 18 => day18::day18(),
+        // 19 => day19::day19(),
+        // 23 => day23::day23(),
+        24 => day24::day24(),
         _ => println!("Error: Day not found!"),
     }
 }
